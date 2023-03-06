@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+.hero {
+  color: #ffffff;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 75px;
+  margin-top: 180px;
+}
+.pattern-ring {
+  top: 4rem;
+  left: -18rem;
+  position: absolute;
+}
+.hero-line {
+  border-bottom: 5px solid #4ee1a0;
+}
+.link {
+  color: #4ee1a0;
+  text-decoration: underline;
+}
