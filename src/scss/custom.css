@@ -11752,4 +11752,12 @@ body {
 .link {
   color: #4ee1a0;
   text-decoration: underline;
+}
+
+.fw-bolder {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.fw-bolder {
+  font-weight: 700;
 }/*# sourceMappingURL=custom.css.map */

@@ -12,13 +12,13 @@ function Hero() {
   return (
     <Container>
       <Row>
-        <Col md={6} lg={8}>
+        <Col md={6} lg={8} className="px-0">
           <Navbar.Brand href="#" className=" d-flex fw-semibold text-light position-fixed ps-3 z-1">
             <h2>adamkeyes</h2>
           </Navbar.Brand>
           <Card className="border-0 h-100 bg-black ">
             <Card.Img src={PaternRing} alt="Card image" className="pattern-ring " />
-            <Card.ImgOverlay>
+            <Card.ImgOverlay className="px-0">
               <Card.Body className=" ps-0 ">
                 <h1 className="hero">
                   Nice to meet you!
@@ -33,7 +33,7 @@ function Hero() {
             </Card.ImgOverlay>
           </Card>
         </Col>
-        <Col className="d-flex justify-content-end ">
+        <Col className="d-flex justify-content-end  px-0">
           <Figure className="d-flex align-items-start justify-content-end">
             <Figure.Caption className=" position-absolute z-1 ">
               <Nav>
@@ -52,9 +52,10 @@ function Hero() {
               </Nav>
             </Figure.Caption>
             <Figure.Image fluid className="d-flex align-self-end" alt="Card image" src={HeroImage} />
-          </Figure>
-        </Col>
-      </Row>
+          </Figure>{" "}
+        </Col>{" "}
+        <hr className="text-light fw-bolder position-relative" />
+      </Row>{" "}
     </Container>
   )
 }

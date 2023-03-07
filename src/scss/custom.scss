@@ -1,3 +1,6 @@
+$text-light: #4ee1a0;
+$border: 2px solid rgb(255, 255, 255);
+$font-weight: 700;
 @import "~bootstrap/scss/bootstrap";
 
 body {
@@ -24,4 +27,10 @@ body {
 .link {
   color: #4ee1a0;
   text-decoration: underline;
+}
+.fw-bolder {
+  border-bottom: $border;
+}
+.fw-bolder {
+  font-weight: $font-weight;
 }
