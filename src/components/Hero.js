@@ -11,29 +11,27 @@ import { Container, Nav, Image, Card, Figure, Col, Row, Navbar } from "react-boo
 function Hero() {
   return (
     <Container>
-      <Row>
-        <Col md={6} lg={8} className="px-0">
-          <Navbar.Brand href="#" className=" d-flex fw-semibold text-light position-fixed ps-3 z-1">
+      <Row className="flex-column-reverse flex-md-row">
+        <Col md={6} lg={8} className="px-0 ">
+          <Navbar.Brand href="#" className=" d-flex fw-semibold text-light position-absolute ps-3 z-1">
             <h2>adamkeyes</h2>
           </Navbar.Brand>
-          <Card className="border-0 h-100 bg-black ">
-            <Card.Img src={PaternRing} alt="Card image" className="pattern-ring " />
-            <Card.ImgOverlay className="px-0">
-              <Card.Body className=" ps-0 ">
-                <h1 className="hero">
-                  Nice to meet you!
-                  <br />
-                  I'm <span className="hero-line">Adam Keyes.</span>
-                </h1>
-                <Card.Text className=" w-50 lh-lg text-light mt-5">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</Card.Text>
-              </Card.Body>{" "}
-              <a href="/#" className="link fs-3">
-                contact me
-              </a>
-            </Card.ImgOverlay>
+          <Card className="border-0 px-0 bg-black mt-5">
+            <Card.Img src={PaternRing} alt="Card image" bsPrefix="pattern-img " />
+            <Card.Body className=" ps-0 ">
+              <h1 className="mt-5 fs-1 fw-bolder display-1 text-light">
+                Nice to meet you!
+                <br />
+                I'm <span className="hero-line">Adam Keyes.</span>
+              </h1>
+              <Card.Text className=" w-50 lh-lg text-light mt-5">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</Card.Text>
+            </Card.Body>{" "}
+            <a href="/#" className="link fs-3">
+              contact me
+            </a>
           </Card>
         </Col>
-        <Col className="d-flex justify-content-end  px-0">
+        <Col md={6} lg={4} className="d-flex justify-content-end px-0 ">
           <Figure className="d-flex align-items-start justify-content-end">
             <Figure.Caption className=" position-absolute z-1 ">
               <Nav>
@@ -54,8 +52,8 @@ function Hero() {
             <Figure.Image fluid className="d-flex align-self-end" alt="Card image" src={HeroImage} />
           </Figure>{" "}
         </Col>{" "}
-        <hr className="text-light fw-bolder position-relative" />
       </Row>{" "}
+      <hr className="border border-light border-1 opacity-75" />
     </Container>
   )
 }

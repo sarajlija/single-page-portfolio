@@ -2,13 +2,14 @@ import "./App.css"
 import Hero from "./components/Hero"
 import Skills from "./components/Skills"
 import "./scss/custom.scss"
+import "./scss/custom.css"
 
 function App() {
   return (
-    <div className="App bg-black">
+    <main className="bg-black">
       <Hero />
       <Skills />
-    </div>
+    </main>
   )
 }
 
