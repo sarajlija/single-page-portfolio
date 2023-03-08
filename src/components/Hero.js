@@ -1,4 +1,5 @@
 import React from "react"
+import "./Hero.scss"
 import HeroImage from "../asets/images/image-profile-desktop.webp"
 import Github from "../asets/images/icon-github.svg"
 import FrontEndMentor from "../asets/images/icon-frontend-mentor.svg"
@@ -16,19 +17,19 @@ function Hero() {
           <Navbar.Brand href="#" className=" d-flex fw-semibold text-light position-absolute ps-3 z-1">
             <h2>adamkeyes</h2>
           </Navbar.Brand>
-          <Card className="border-0 px-0 bg-black mt-5">
+          <Card className="border-0 px-0 bg-black mt-5" bsPrefix="card">
             <Card.Img src={PaternRing} alt="Card image" bsPrefix="pattern-img " />
-            <Card.Body className=" ps-0 ">
-              <h1 className="mt-5 fs-1 fw-bolder display-1 text-light">
+            <Card.Body className="position-absolute ps-0 top-5">
+              <h1 className=" fw-bolder  text-light">
                 Nice to meet you!
                 <br />
                 I'm <span className="hero-line">Adam Keyes.</span>
               </h1>
-              <Card.Text className=" w-50 lh-lg text-light mt-5">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</Card.Text>
-            </Card.Body>{" "}
-            <a href="/#" className="link fs-3">
-              contact me
-            </a>
+              <Card.Text className=" w-50 lh-lg text-light mt-5">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</Card.Text>{" "}
+              <a href="/#" className="fs-3">
+                contact me
+              </a>
+            </Card.Body>
           </Card>
         </Col>
         <Col md={6} lg={4} className="d-flex justify-content-end px-0 ">

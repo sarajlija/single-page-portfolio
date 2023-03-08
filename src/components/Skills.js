@@ -12,22 +12,20 @@ function Skills() {
     { title: "Sass", text: "3 Years Experience" }
   ]
   return (
-    <div>
-      <Container>
-        <Row xs={1} md={3} className="g-4 mt-5">
-          {Array.map((item, index) => (
-            <Col key={index}>
-              <h1>{item.title}</h1>
-              <Card className="bg-black text-light">
-                <Card.Body>
-                  <Card.Text>{item.text}</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </div>
+    <Container>
+      <Row xs={1} md={3} className="g-4 mt-5">
+        {Array.map((item, index) => (
+          <Col key={index}>
+            <h1 className="text-light">{item.title}</h1>
+            <Card className="bg-black text-light">
+              <Card.Body className="px-0">
+                <Card.Text>{item.text}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   )
 }
 
