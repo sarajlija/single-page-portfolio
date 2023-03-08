@@ -1,3 +1,5 @@
+@import "variables";
+
 .card {
   h1 {
     font-size: 88px;
@@ -8,10 +10,13 @@
     position: absolute;
   }
   .card-body {
-    a {
-      color: #4ee1a0;
+    .custom-link {
+      color: $white;
       text-decoration: none;
       border-bottom: 3px solid #4ee1a0;
+      & :hover {
+        color: $customGreen;
+      }
     }
   }
 }

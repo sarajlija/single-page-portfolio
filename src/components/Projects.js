@@ -1,5 +1,5 @@
 import React from "react"
-import "./Projects.scss"
+
 import { Col, Card, Container, Row } from "react-bootstrap"
 import ProL1 from "../asets/images/thumbnail-project-1-large.webp"
 import ProL2 from "../asets/images/thumbnail-project-2-large.webp"
@@ -21,7 +21,7 @@ function Projects() {
       <Row>
         <Col className="d-flex justify-content-between align-items-center">
           <h2 className="text-light">Projects</h2>
-          <a href="/#" className="">
+          <a href="/#" className="custom-link fs-3">
             contact me
           </a>
         </Col>

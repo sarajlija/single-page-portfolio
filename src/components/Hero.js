@@ -1,5 +1,4 @@
 import React from "react"
-import "./Hero.scss"
 import HeroImage from "../asets/images/image-profile-desktop.webp"
 import Github from "../asets/images/icon-github.svg"
 import FrontEndMentor from "../asets/images/icon-frontend-mentor.svg"
@@ -26,7 +25,7 @@ function Hero() {
                 I'm <span className="hero-line">Adam Keyes.</span>
               </h1>
               <Card.Text className=" w-50 lh-lg text-light mt-5">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</Card.Text>{" "}
-              <a href="/#" className="fs-3">
+              <a href="/#" className="fs-3 custom-link">
                 contact me
               </a>
             </Card.Body>

@@ -1,4 +1,4 @@
-import "./App.css"
+import "./sass/main.css"
 import Hero from "./components/Hero"
 import Skills from "./components/Skills"
 import Projects from "./components/Projects"
