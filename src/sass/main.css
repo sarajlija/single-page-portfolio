@@ -16,15 +16,6 @@
   color: #4ee1a0;
 }
 
-.custom-link {
-  color: #ffffff;
-  text-decoration: none;
-  border-bottom: 3px solid #4ee1a0;
-}
-.custom-link :hover {
-  color: #4ee1a0;
-}
-
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

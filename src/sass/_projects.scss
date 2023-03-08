@@ -1,13 +1,1 @@
 @import "variables";
-
-a {
-  color: rgba(255, 255, 0);
-  text-decoration: none;
-
-  &:hover {
-    --#{$prefix}link-color-rgb: var(--#{$prefix}link-hover-color-rgb);
-    text-decoration: $link-hover-decoration;
-  }
-}
-
-@import "bootstrap/scss/reboot";

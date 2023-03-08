@@ -17,29 +17,43 @@ function Projects() {
     { img: ProL6, title: "ART GALLERY SHOWCASE", text: "HTML CSS JAVASCRIPT" }
   ]
   return (
-    <Container>
-      <Row>
-        <Col className="d-flex justify-content-between align-items-center">
-          <h2 className="text-light">Projects</h2>
-          <a href="/#" className="custom-link fs-3">
-            contact me
-          </a>
-        </Col>
-      </Row>
-      <Row xs={1} md={2} className="g-4 mt-2">
-        {projects.map((item, index) => (
-          <Col key={index}>
-            <Card className="bg-black text-light">
-              <Card.Img src={item.img} />
-              <Card.Body className="px-0">
-                <Card.Title className="fs-4 fw-bold">{item.title}</Card.Title>
-                <Card.Text>{item.text}</Card.Text>
-              </Card.Body>
-            </Card>
+    <>
+      <style type="text/css">
+        {`
+        a {
+          color: rgba(255, 255, 0);
+          text-decoration: none;
+        }
+        a:hover {
+            color:blue;    
+          text-decoration: none;
+        }
+        `}
+      </style>
+      <Container>
+        <Row>
+          <Col className="d-flex justify-content-between align-items-center">
+            <h2 className="text-light">Projects</h2>
+            <a href="/#" className="fs-3">
+              contact me
+            </a>
           </Col>
-        ))}
-      </Row>
-    </Container>
+        </Row>
+        <Row xs={1} md={2} className="g-4 mt-2">
+          {projects.map((item, index) => (
+            <Col key={index}>
+              <Card className="bg-black text-light">
+                <Card.Img src={item.img} />
+                <Card.Body className="px-0">
+                  <Card.Title className="fs-4 fw-bold">{item.title}</Card.Title>
+                  <Card.Text>{item.text}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </>
   )
 }
 
