@@ -11,34 +11,6 @@ import { Container, Nav, Image, Card, Figure, Col, Row, Navbar } from "react-boo
 function Hero() {
   return (
     <>
-      <style type="text/css">
-        {`
-      h1 {
-        font-size:88px;
-      }
-    a {
-      color: #ffffff;
-      text-transform: uppercase;
-      font-size:16px;
-      text-decoration: none;
-      border-bottom: 3px solid #4ee1a0;
-     
-    }
-    a:hover {
-        color:#4ee1a0;    
-     
-    }
-    .navbar {    
-      border-bottom:none;
-    }
-    .nav-link {  
-      text-decoration: none;  
-      border-bottom:none;
-    }
-    
-   
-    `}
-      </style>
       <Container>
         <Row className="flex-column-reverse flex-md-row">
           <Col md={6} lg={8} className="px-0 ">

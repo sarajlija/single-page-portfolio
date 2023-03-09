@@ -36,9 +36,11 @@ function App() {
     }
     .contact {
       background-color:#242424;
+      
     }
     .card {
       background-color:#242424;
+     
     }
     .btn-primary {
       background-color:transparent;

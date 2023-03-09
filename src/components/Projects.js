@@ -26,7 +26,7 @@ function Projects() {
           </a>
         </Col>
       </Row>
-      <Row xs={1} md={2} className="g-4 mt-2">
+      <Row xs={1} md={2} className="g-4 mt-2 ">
         {projects.map((item, index) => (
           <Col key={index}>
             <Card className="bg-black text-light text-uppercase text-start" bsPrefix="card">
