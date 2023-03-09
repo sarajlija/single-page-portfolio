@@ -9,14 +9,4 @@
     left: -18rem;
     position: absolute;
   }
-  .card-body {
-    .custom-link {
-      color: $white;
-      text-decoration: none;
-      border-bottom: 3px solid #4ee1a0;
-      & :hover {
-        color: $customGreen;
-      }
-    }
-  }
 }

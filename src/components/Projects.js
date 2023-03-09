@@ -17,43 +17,39 @@ function Projects() {
     { img: ProL6, title: "ART GALLERY SHOWCASE", text: "HTML CSS JAVASCRIPT" }
   ]
   return (
-    <>
-      <style type="text/css">
-        {`
-        a {
-          color: rgba(255, 255, 0);
-          text-decoration: none;
-        }
-        a:hover {
-            color:blue;    
-          text-decoration: none;
-        }
-        `}
-      </style>
-      <Container>
-        <Row>
-          <Col className="d-flex justify-content-between align-items-center">
-            <h2 className="text-light">Projects</h2>
-            <a href="/#" className="fs-3">
-              contact me
-            </a>
+    <Container>
+      <Row>
+        <Col className="d-flex justify-content-between align-items-center mt-5">
+          <h1 className="text-light ">Projects</h1>
+          <a href="/#" className="">
+            contact me
+          </a>
+        </Col>
+      </Row>
+      <Row xs={1} md={2} className="g-4 mt-2">
+        {projects.map((item, index) => (
+          <Col key={index}>
+            <Card className="bg-black text-light text-uppercase text-start" bsPrefix="card">
+              <Card.Img src={item.img} bsPrefix="card-img" className="" />
+              <Card.ImgOverlay className="bg-black text-center" bsPrefix="card-img-overlay">
+                <Card.Link href="/#" className="" bsPrefix="card-link">
+                  view project
+                </Card.Link>
+                <Card.Link href="/#" className="" bsPrefix="card-link">
+                  view code
+                </Card.Link>
+              </Card.ImgOverlay>
+            </Card>
+            <Card className="bg-black text-light">
+              <Card.Body className="px-0">
+                <Card.Title className="fs-4 fw-bold">{item.title}</Card.Title>
+                <Card.Text className="fs-0">{item.text}</Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
-        </Row>
-        <Row xs={1} md={2} className="g-4 mt-2">
-          {projects.map((item, index) => (
-            <Col key={index}>
-              <Card className="bg-black text-light">
-                <Card.Img src={item.img} />
-                <Card.Body className="px-0">
-                  <Card.Title className="fs-4 fw-bold">{item.title}</Card.Title>
-                  <Card.Text>{item.text}</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </>
+        ))}
+      </Row>
+    </Container>
   )
 }
 

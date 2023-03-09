@@ -7,13 +7,21 @@
   left: -18rem;
   position: absolute;
 }
-.card .card-body .custom-link {
-  color: #ffffff;
-  text-decoration: none;
-  border-bottom: 3px solid #4ee1a0;
+
+h1, .h1 {
+  font-size: 88px;
 }
-.card .card-body .custom-link :hover {
-  color: #4ee1a0;
+
+.card .card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.card .card-img-overlay:hover {
+  opacity: 0.8;
 }
 
 /*!
