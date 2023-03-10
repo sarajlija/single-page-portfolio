@@ -3,15 +3,19 @@ import Hero from "./components/Hero"
 import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import "./App.css"
+import { Container } from "react-bootstrap"
 //import "./scss/custom.scss"
 //import "./scss/custom.css"
 
 function App() {
   return (
     <>
-      <main className="bg-black">
-        <style type="text/css">
-          {`
+      <Container>
+        <main>
+          <style type="text/css">
+            {`
+        
       h1 {
         font-size:88px;
       }
@@ -27,21 +31,40 @@ function App() {
         color:#4ee1a0;    
      
     }
-    .navbar {    
+    .navbar { 
+         
       border-bottom:none;
     }
     .nav-link {  
       text-decoration: none;  
       border-bottom:none;
     }
+    .col {
+    margin-top:48px;
+    }
     .contact {
+      margin-top:85px;
       background-color:#242424;
+      margin-bottom:4rem;
       
     }
     .card {
       background-color:#242424;
      
     }
+    .img-pattern {
+      left: -14rem;   
+     
+      position: absolute;
+    }
+    .img-pattern-right {
+      bottom:3rem; 
+      right: -14rem;
+      position: absolute;
+
+
+    }
+    
     .btn-primary {
       background-color:transparent;
       color:#ffffff;
@@ -52,6 +75,7 @@ function App() {
     .btn-primary:hover{
       background-color:transparent;
       color:#4ee1a0;
+      border-bottom: 3px solid  #4ee1a0;
        
     }
     .btn-primary:active{
@@ -64,14 +88,13 @@ function App() {
     }
    
     `}
-        </style>
-        <Hero />
-        <Skills />
-        <Projects />
-      </main>
-      <footer>
-        <Contact />
-      </footer>
+          </style>
+          <Hero />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+      </Container>
     </>
   )
 }
