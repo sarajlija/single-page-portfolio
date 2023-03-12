@@ -1,5 +1,7 @@
 import React from "react"
-import HeroImage from "../asets/images/image-profile-desktop.webp"
+import HeroImageDesktop from "../asets/images/image-profile-desktop.webp"
+import HeroImageTablet from "../asets/images/image-profile-tablet.webp"
+import HeroImageMobile from "../asets/images/image-profile-tablet.webp"
 import Github from "../asets/images/icon-github.svg"
 import FrontEndMentor from "../asets/images/icon-frontend-mentor.svg"
 import Linkedin from "../asets/images/icon-linkedin.svg"
@@ -9,6 +11,14 @@ import PaternRing from "../asets/images/pattern-rings.svg"
 import { Container, Nav, Image, Card, Figure, Col, Row, Navbar } from "react-bootstrap"
 
 function Hero() {
+  let HeroImage = HeroImageDesktop
+  if (window.innerWidth < 992) {
+    HeroImage = HeroImageTablet
+  } else if (window.innerWidth < 768) {
+    HeroImage = HeroImageMobile
+    console.log(HeroImage)
+  }
+
   return (
     <>
       <Container>
