@@ -1,9 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import "./index.css"
-import "./sass/main.css"
 import App from "./App"
 import "bootstrap/dist/css/bootstrap.min.css"
+import "./css/custom.css"
+import "./index.css"
 import reportWebVitals from "./reportWebVitals"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))

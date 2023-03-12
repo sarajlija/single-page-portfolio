@@ -33,16 +33,6 @@ a:hover {
 .card {
   background-color: #242424;
 }
-.img-pattern {
-  left: -14rem;
-
-  position: absolute;
-}
-.img-pattern-right {
-  bottom: 3rem;
-  right: -14rem;
-  position: absolute;
-}
 
 .btn-primary {
   background-color: transparent;
@@ -63,4 +53,25 @@ a:hover {
 .btn-primary:focus {
   background-color: transparent;
   border-bottom: 3px solid #4ee1a0;
+}
+
+.pattern-img {
+  top: 4rem;
+  left: -18rem;
+  position: absolute;
+}
+.card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.card-img-overlay:hover {
+  opacity: 0.8;
+}
+.img {
+  position: absolute;
+  top: 60rem;
 }
