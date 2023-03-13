@@ -32,9 +32,10 @@ function Hero() {
       <Container>
         <Row className="flex-column-reverse flex-md-row">
           <Col md={6} lg={8} className="px-0 ">
-            <Navbar.Brand href="#" className=" d-flex fw-semibold text-light position-absolute ps-3 z-1" bsPrefix="navbar">
-              <h2>adamkeyes</h2>
+            <Navbar.Brand href="#home" className=" d-flex fw-semibold text-light position-absolute ps-3 z-1" bsPrefix="navbar">
+              adamkeyes
             </Navbar.Brand>
+
             <Card className="border-0 px-0 bg-black mt-5" bsPrefix="card">
               <Card.Img src={PaternRing} alt="Card image" bsPrefix="pattern-img " />
               <Card.Body className="position-absolute ps-0 top-5">
@@ -68,7 +69,7 @@ function Hero() {
                   </Nav.Link>
                 </Nav>
               </Figure.Caption>
-              <Figure.Image fluid className="d-flex align-self-end" alt="Card image" src={windowWidth > 1024 ? HeroImageDesktop : windowWidth > 576 ? HeroImageTablet : windowWidth < 576 ? HeroImageMobile : null} />
+              <Figure.Image fluid className="d-flex align-self-end" alt="Card image" src={windowWidth > 1024 ? HeroImageDesktop : windowWidth > 576 ? HeroImageTablet : HeroImageMobile} />
             </Figure>{" "}
           </Col>{" "}
         </Row>{" "}

@@ -13,7 +13,7 @@ function Contact() {
   }
   return (
     <Container className="contact">
-      <Row>
+      <Row xs={1} md={1} lg={2}>
         <Col bsPrefix="col">
           <Card className="border-0 px-0" bsPrefix="card">
             <Card.Body className="ps-0">
@@ -21,7 +21,6 @@ function Contact() {
               <Card.Text className="w-50 lh-lg text-light mt-2">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</Card.Text>
             </Card.Body>
           </Card>
-          <Card.Img src={PaternRing} alt="Card image" bsPrefix="img-pattern " />
         </Col>
 
         <Col>
@@ -43,14 +42,15 @@ function Contact() {
               send message
             </Button>
           </Form>
+          <Card.Img src={PaternRing} alt="Card image" bsPrefix="img-pattern-contact" />
         </Col>
-        <hr className="border border-light border-1 opacity-75 mb-5 mt-5" />
+        <hr className="border border-light border-1 opacity-75" />
       </Row>
-      <Row>
+      <Row xs={1} md={1} lg={2}>
         <Col>
           <Navbar expand="lg" variant="dark" bg="dark" className="d-flex px-0 align-items-center justify-content-between" bsPrefix="navbar">
-            <Navbar.Brand href="#" className=" d-flex fw-semibold text-light   " bsPrefix="navbar">
-              <h2>adamkeyes</h2>
+            <Navbar.Brand href="#home" className=" d-flex fw-semibold text-light " bsPrefix="navbar">
+              adamkeyes
             </Navbar.Brand>
 
             <Nav>

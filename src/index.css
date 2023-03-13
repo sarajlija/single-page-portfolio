@@ -9,6 +9,9 @@ body {
 h1 {
   font-size: 88px;
 }
+h2 {
+  font-size: 48px;
+}
 @media (max-width: 1024px) {
   h1 {
     font-size: 72px;
@@ -26,6 +29,8 @@ a:hover {
 }
 .navbar {
   border-bottom: none;
+  font-size: 32px;
+  font-weight: 700;
 }
 .nav-link {
   text-decoration: none;
@@ -66,7 +71,11 @@ a:hover {
 }
 
 .pattern-img {
-  top: 4rem;
+  top: 0;
+  left: -18rem;
+  position: absolute;
+}
+.img-pattern-contact {
   left: -18rem;
   position: absolute;
 }
@@ -88,4 +97,7 @@ a:hover {
 .img {
   position: absolute;
   top: 60rem;
+}
+hr {
+  margin: 4rem 0;
 }
