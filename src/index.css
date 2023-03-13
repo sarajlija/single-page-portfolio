@@ -1,9 +1,18 @@
 body {
   background-color: "#000000";
+
+  /*background-image: url("./asets/images/pattern-rings.svg");
+  background-repeat: no-repeat;
+  background-position: right -20rem top 60rem;*/
 }
 
 h1 {
   font-size: 88px;
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 72px;
+  }
 }
 a {
   color: #ffffff;
@@ -60,6 +69,10 @@ a:hover {
   top: 4rem;
   left: -18rem;
   position: absolute;
+}
+.pattern-img-right {
+  position: absolute;
+  right: -20rem;
 }
 .card-img-overlay {
   display: flex;

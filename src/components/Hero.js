@@ -1,7 +1,7 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import HeroImageDesktop from "../asets/images/image-profile-desktop.webp"
 import HeroImageTablet from "../asets/images/image-profile-tablet.webp"
-import HeroImageMobile from "../asets/images/image-profile-tablet.webp"
+import HeroImageMobile from "../asets/images/image-profile-mobile.webp"
 import Github from "../asets/images/icon-github.svg"
 import FrontEndMentor from "../asets/images/icon-frontend-mentor.svg"
 import Linkedin from "../asets/images/icon-linkedin.svg"
@@ -11,13 +11,21 @@ import PaternRing from "../asets/images/pattern-rings.svg"
 import { Container, Nav, Image, Card, Figure, Col, Row, Navbar } from "react-bootstrap"
 
 function Hero() {
-  let HeroImage = HeroImageDesktop
-  if (window.innerWidth < 992) {
-    HeroImage = HeroImageTablet
-  } else if (window.innerWidth < 768) {
-    HeroImage = HeroImageMobile
-    console.log(HeroImage)
-  }
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener("resize", handleWindowResize)
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize)
+    }
+  })
+  console.log(windowWidth)
+  // Add a listener for when the window resizes
 
   return (
     <>
@@ -60,7 +68,7 @@ function Hero() {
                   </Nav.Link>
                 </Nav>
               </Figure.Caption>
-              <Figure.Image fluid className="d-flex align-self-end" alt="Card image" src={HeroImage} />
+              <Figure.Image fluid className="d-flex align-self-end" alt="Card image" src={windowWidth > 1024 ? HeroImageDesktop : windowWidth > 576 ? HeroImageTablet : windowWidth < 576 ? HeroImageMobile : null} />
             </Figure>{" "}
           </Col>{" "}
         </Row>{" "}
