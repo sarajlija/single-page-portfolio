@@ -30,49 +30,56 @@ function Hero() {
   return (
     <>
       <Container>
-        <Row className="flex-column-reverse flex-md-row">
-          <Col md={6} lg={8} className="px-0 ">
-            <Navbar.Brand href="#home" className=" d-flex fw-semibold text-light position-absolute ps-3 z-1" bsPrefix="navbar">
-              adamkeyes
-            </Navbar.Brand>
+        {" "}
+        <Navbar bg="transparent" className="  d-flex flex-column flex-md-row position-absolute z-2 d-flex px-0 align-items-center justify-content-between" bsPrefix="navbar">
+          <Navbar.Brand href="#home" className=" d-flex fw-semibold text-light " bsPrefix="navbar">
+            adamkeyes
+          </Navbar.Brand>
 
-            <Card className="border-0 px-0 bg-black mt-5" bsPrefix="card">
+          <Nav className="w-100 ms-auto">
+            <Nav.Link href="https://github.com/sarajlija/single-page-portfolio" target="_blank" bsPrefix="nav-link">
+              <Image src={Github} />
+            </Nav.Link>
+            <Nav.Link href="#">
+              <Image src={FrontEndMentor} />
+            </Nav.Link>
+            <Nav.Link href="#">
+              <Image src={Linkedin} />
+            </Nav.Link>
+            <Nav.Link href="#">
+              <Image src={Twitter} />
+            </Nav.Link>
+          </Nav>
+        </Navbar>
+      </Container>
+
+      <Container className="">
+        <Row className="">
+          <Col></Col>
+        </Row>
+        <Row className=" flex-column-reverse flex-md-row">
+          <Col md={6} lg={8} className="px-0">
+            <Card className="border-0 px-0 bg-black " bsPrefix="card__heading">
               <Card.Img src={PaternRing} alt="Card image" bsPrefix="pattern-img " />
-              <Card.Body className="position-absolute ps-0 top-5">
+              <Card.Body bsPrefix="card-body__hero">
                 <h1 className=" fw-bolder  text-light">
                   Nice to meet you!
                   <br />
                   I'm <span className="hero-line">Adam Keyes.</span>
                 </h1>
-                <Card.Text className=" w-50 lh-lg text-light mt-5">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</Card.Text>{" "}
+                <Card.Text bsPrefix="card-text" className=" w-50 lh-lg text-light mt-5">
+                  Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.
+                </Card.Text>{" "}
                 <a href="/#" className="">
                   contact me
                 </a>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6} lg={4} className="d-flex justify-content-end px-0 ">
-            <Figure className="d-flex align-items-start justify-content-end">
-              <Figure.Caption className=" position-absolute z-1 ">
-                <Nav>
-                  <Nav.Link href="https://github.com/sarajlija/single-page-portfolio" target="_blank" bsPrefix="nav-link">
-                    <Image src={Github} />
-                  </Nav.Link>
-                  <Nav.Link href="#">
-                    <Image src={FrontEndMentor} />
-                  </Nav.Link>
-                  <Nav.Link href="#">
-                    <Image src={Linkedin} />
-                  </Nav.Link>
-                  <Nav.Link href="#">
-                    <Image src={Twitter} />
-                  </Nav.Link>
-                </Nav>
-              </Figure.Caption>
-              <Figure.Image fluid className="d-flex align-self-end" alt="Card image" src={windowWidth > 1024 ? HeroImageDesktop : windowWidth > 576 ? HeroImageTablet : HeroImageMobile} />
-            </Figure>{" "}
-          </Col>{" "}
-        </Row>{" "}
+          <Col className="col__hero">
+            <img className="d-flex img-fluid" alt="Card image" src={windowWidth > 1024 ? HeroImageDesktop : windowWidth > 576 ? HeroImageTablet : HeroImageMobile} />
+          </Col>
+        </Row>
         <hr className="border border-light border-1 opacity-75" />
       </Container>
     </>

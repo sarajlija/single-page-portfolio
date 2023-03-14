@@ -17,7 +17,7 @@ function Skills() {
         <Row xs={1} md={2} lg={3} className="g-4 mt-5 mb-5 ">
           {" "}
           {Array.map((item, index) => (
-            <Col key={index}>
+            <Col key={index} bsPrefix="col__skills">
               <h2 className="text-light">{item.title}</h2>
               <Card className="bg-black text-light">
                 <Card.Body className="px-0">

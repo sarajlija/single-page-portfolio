@@ -44,11 +44,11 @@ function Contact() {
           </Form>
           <Card.Img src={PaternRing} alt="Card image" bsPrefix="img-pattern-contact" />
         </Col>
-        <hr className="border border-light border-1 opacity-75" />
-      </Row>
+      </Row>{" "}
+      <hr className="border border-light border-1 opacity-75" />
       <Row xs={1} md={1} lg={2}>
-        <Col>
-          <Navbar expand="lg" variant="dark" bg="dark" className="d-flex px-0 align-items-center justify-content-between" bsPrefix="navbar">
+        <Col className=" w-100">
+          <Navbar bg="transparent" className="d-flex px-0 align-items-center justify-content-between" bsPrefix="navbar">
             <Navbar.Brand href="#home" className=" d-flex fw-semibold text-light " bsPrefix="navbar">
               adamkeyes
             </Navbar.Brand>
