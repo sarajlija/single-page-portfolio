@@ -15,7 +15,7 @@ function Contact() {
     <Container className="contact">
       <Row xs={1} md={1} lg={2}>
         <Col bsPrefix="col">
-          <Card className="border-0 px-0" bsPrefix="card">
+          <Card className="border-0 px-0" bsPrefix="card__contact">
             <Card.Body className="ps-0">
               <h1 className=" fw-bolder  text-light">Contact</h1>
               <Card.Text className="w-50 lh-lg text-light mt-2">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</Card.Text>

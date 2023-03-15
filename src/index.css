@@ -28,6 +28,13 @@ a:hover {
   font-size: 32px;
   font-weight: 700;
 }
+.nav__hero {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1rem;
+}
 .nav-link {
   text-decoration: none;
   border-bottom: none;
@@ -38,8 +45,10 @@ a:hover {
   background-color: #242424;
   margin-bottom: 4rem;
 }
+.card__contact {
+  background-color: #242424;
+}
 .card__heading {
-  margin-top: 7rem;
   background-color: #242424;
 }
 
@@ -65,7 +74,7 @@ a:hover {
 }
 
 .pattern-img {
-  top: 17rem;
+  top: 8rem;
   left: -18rem;
   position: absolute;
 }
@@ -87,6 +96,14 @@ a:hover {
 }
 .card-img-overlay:hover {
   opacity: 0.8;
+}
+.card-img-overlay__hero {
+  display: flex;
+  top: 0;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
 }
 .img {
   position: absolute;
@@ -116,6 +133,11 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  @media (max-width: 768px) {
+    .nav {
+      top: 0;
+    }
   }
   .col__skills {
     display: flex;

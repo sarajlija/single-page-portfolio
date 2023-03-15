@@ -29,37 +29,16 @@ function Hero() {
 
   return (
     <>
-      <Container>
-        {" "}
-        <Navbar bg="transparent" className="  d-flex flex-column flex-md-row position-absolute z-2 d-flex px-0 align-items-center justify-content-between" bsPrefix="navbar">
-          <Navbar.Brand href="#home" className=" d-flex fw-semibold text-light " bsPrefix="navbar">
-            adamkeyes
-          </Navbar.Brand>
-
-          <Nav className="w-100 ms-auto">
-            <Nav.Link href="https://github.com/sarajlija/single-page-portfolio" target="_blank" bsPrefix="nav-link">
-              <Image src={Github} />
-            </Nav.Link>
-            <Nav.Link href="#">
-              <Image src={FrontEndMentor} />
-            </Nav.Link>
-            <Nav.Link href="#">
-              <Image src={Linkedin} />
-            </Nav.Link>
-            <Nav.Link href="#">
-              <Image src={Twitter} />
-            </Nav.Link>
-          </Nav>
-        </Navbar>
-      </Container>
-
       <Container className="">
-        <Row className="">
-          <Col></Col>
-        </Row>
+        <Col className="position-absolute "></Col>
         <Row className=" flex-column-reverse flex-md-row">
           <Col md={6} lg={8} className="px-0">
             <Card className="border-0 px-0 bg-black " bsPrefix="card__heading">
+              <Navbar bg="transparent" className="  d-flex flex-column flex-md-row  " bsPrefix="navbar">
+                <Navbar.Brand href="#home" className=" d-flex fw-semibold text-light " bsPrefix="navbar">
+                  adamkeyes
+                </Navbar.Brand>
+              </Navbar>
               <Card.Img src={PaternRing} alt="Card image" bsPrefix="pattern-img " />
               <Card.Body bsPrefix="card-body__hero">
                 <h1 className=" fw-bolder  text-light">
@@ -77,9 +56,28 @@ function Hero() {
             </Card>
           </Col>
           <Col className="col__hero">
-            <img className="d-flex img-fluid" alt="Card image" src={windowWidth > 1024 ? HeroImageDesktop : windowWidth > 576 ? HeroImageTablet : HeroImageMobile} />
+            <Card className="bg-dark text-white">
+              <Card.Img className="d-flex img-fluid " src={windowWidth > 1024 ? HeroImageDesktop : windowWidth > 576 ? HeroImageTablet : HeroImageMobile} />
+              <Card.ImgOverlay bsPrefix="'card-img-overlay__hero">
+                <Nav bsPrefix="nav__hero" className="">
+                  <Nav.Link href="https://github.com/sarajlija/single-page-portfolio" target="_blank" bsPrefix="nav-link">
+                    <Image src={Github} />
+                  </Nav.Link>
+                  <Nav.Link href="#">
+                    <Image src={FrontEndMentor} />
+                  </Nav.Link>
+                  <Nav.Link href="#">
+                    <Image src={Linkedin} />
+                  </Nav.Link>
+                  <Nav.Link href="#">
+                    <Image src={Twitter} />
+                  </Nav.Link>
+                </Nav>
+              </Card.ImgOverlay>
+            </Card>
           </Col>
         </Row>
+
         <hr className="border border-light border-1 opacity-75" />
       </Container>
     </>
