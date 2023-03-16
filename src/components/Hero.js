@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import HeroImageDesktop from "../asets/images/image-profile-desktop.webp"
 import HeroImageTablet from "../asets/images/image-profile-tablet.webp"
 import HeroImageMobile from "../asets/images/image-profile-mobile.webp"
@@ -8,25 +8,9 @@ import Linkedin from "../asets/images/icon-linkedin.svg"
 import Twitter from "../asets/images/icon-twitter.svg"
 //import PaternCircle from "../asets/images/pattern-circle.svg"
 import PaternRing from "../asets/images/pattern-rings.svg"
-import { Container, Nav, Image, Card, Figure, Col, Row, Navbar } from "react-bootstrap"
+import { Container, Nav, Image, Card, Col, Row, Navbar } from "react-bootstrap"
 
-function Hero() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth)
-    }
-
-    window.addEventListener("resize", handleWindowResize)
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize)
-    }
-  })
-  console.log(windowWidth)
-  // Add a listener for when the window resizes
-
+function Hero({ windowWidth }) {
   return (
     <>
       <Container className="">

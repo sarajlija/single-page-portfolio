@@ -32,19 +32,19 @@ function Contact() {
           </Col>
 
           <Col>
-            <Form className="text-light" noValidate validated={validated} onSubmit={handleSubmit}>
+            <Form className="text-light mt-5" noValidate validated={validated} onSubmit={handleSubmit}>
               <Form.Group className="mb-3 " controlId="validationCustom01">
                 <Form.Label>Name</Form.Label>
                 <Form.Control className="text-light" placeholder="name" required type="text" defaultValue="" />
               </Form.Group>
               <Form.Group className="mb-3 text-light" controlId="formBasicEmail" required>
-                <Form.Label>Email address</Form.Label>
+                <Form.Label>Email</Form.Label>
                 <Form.Control className="text-light" type="email" placeholder="Enter email" />
                 <Form.Control.Feedback type="invalid">Please provide a valid email address.</Form.Control.Feedback>
                 <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Example textarea</Form.Label>
+                <Form.Label>message</Form.Label>
                 <Form.Control className="text-light" as="textarea" rows={3} />
               </Form.Group>
               <Button variant="primary" type="submit" className="rounded-0 text-uppercase float-end">

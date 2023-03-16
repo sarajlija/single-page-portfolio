@@ -7,14 +7,26 @@ import ProL3 from "../asets/images/thumbnail-project-3-large.webp"
 import ProL4 from "../asets/images/thumbnail-project-4-large.webp"
 import ProL5 from "../asets/images/thumbnail-project-5-large.webp"
 import ProL6 from "../asets/images/thumbnail-project-6-large.webp"
-function Projects() {
+import ProS1 from "../asets/images/thumbnail-project-1-small.webp"
+import ProS2 from "../asets/images/thumbnail-project-2-small.webp"
+import ProS3 from "../asets/images/thumbnail-project-3-small.webp"
+import ProS4 from "../asets/images/thumbnail-project-4-small.webp"
+import ProS5 from "../asets/images/thumbnail-project-5-small.webp"
+import ProS6 from "../asets/images/thumbnail-project-6-small.webp"
+function Projects({ windowWidth }) {
   const projects = [
     { img: ProL1, title: "DESIGN PORTFOLIO", text: "HTML CSS" },
     { img: ProL2, title: "E-LEARNING LANDING PAGE", text: "HTML CSS" },
     { img: ProL3, title: "TODO WEB APP", text: "HTML CSS JAVASCRIPT" },
     { img: ProL4, title: "ENTERTAINMENT WEB APP", text: "HTML CSS JAVASCRIPT" },
     { img: ProL5, title: "MEMORY GAME", text: "HTML CSS JAVASCRIPT" },
-    { img: ProL6, title: "ART GALLERY SHOWCASE", text: "HTML CSS JAVASCRIPT" }
+    { img: ProL6, title: "ART GALLERY SHOWCASE", text: "HTML CSS JAVASCRIPT" },
+    { imgSmall: ProS1, title: "DESIGN PORTFOLIO", text: "HTML CSS" },
+    { imgSmall: ProS2, title: "E-LEARNING LANDING PAGE", text: "HTML CSS" },
+    { imgSmall: ProS3, title: "TODO WEB APP", text: "HTML CSS JAVASCRIPT" },
+    { imgSmall: ProS4, title: "ENTERTAINMENT WEB APP", text: "HTML CSS JAVASCRIPT" },
+    { imgSmall: ProS5, title: "MEMORY GAME", text: "HTML CSS JAVASCRIPT" },
+    { imgSmall: ProS6, title: "ART GALLERY SHOWCASE", text: "HTML CSS JAVASCRIPT" }
   ]
   return (
     <Container>
@@ -30,7 +42,7 @@ function Projects() {
         {projects.map((item, index) => (
           <Col key={index}>
             <Card className="bg-black text-light text-uppercase text-start" bsPrefix="card">
-              <Card.Img src={item.img} bsPrefix="card-img" className="" />
+              <Card.Img src={windowWidth > 768 ? item.img : item.imgSmall} bsPrefix="card-img" className="" />
               <Card.ImgOverlay className="bg-black text-center" bsPrefix="card-img-overlay">
                 <Card.Link href="/#" className="" bsPrefix="card-link">
                   view project
