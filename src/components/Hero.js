@@ -41,7 +41,7 @@ function Hero({ windowWidth }) {
               <Card.Img className="d-flex img-fluid " src={windowWidth > 1024 ? HeroImageDesktop : windowWidth > 576 ? HeroImageTablet : HeroImageMobile} />
               <Card.ImgOverlay bsPrefix="'card-img-overlay__hero">
                 <Nav className="position-absolute top-0 mt-3" bsPrefix="nav__hero">
-                  <Nav.Link href="https://github.com/sarajlija/single-page-portfolio" target="_blank" bsPrefix="nav-link">
+                  <Nav.Link href="#" target="_blank" bsPrefix="nav-link">
                     <Image src={Github} />
                   </Nav.Link>
                   <Nav.Link href="#">
