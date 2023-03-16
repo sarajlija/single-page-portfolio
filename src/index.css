@@ -3,9 +3,6 @@
   src: local("SpaceGrotesk-VariableFont"), url("./asets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
   font-weight: 500;
 }
-.font-face-gm {
-  font-family: "SpaceGrotesk-VariableFont";
-}
 
 h1 {
   font-size: 88px;
