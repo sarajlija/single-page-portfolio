@@ -1,8 +1,12 @@
-body {
-  /*background-image: url("./asets/images/pattern-rings.svg");
-  background-repeat: no-repeat;
-  background-position: right -20rem top 60rem;*/
+@font-face {
+  font-family: "SpaceGrotesk-VariableFont";
+  src: local("SpaceGrotesk-VariableFont"), url("./asets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500;
 }
+.font-face-gm {
+  font-family: "SpaceGrotesk-VariableFont";
+}
+
 main {
   background-color: "#000000";
 }

@@ -21,7 +21,7 @@ function App() {
   console.log(windowWidth)
   return (
     <>
-      <main className="overflow-hidden">
+      <main className="overflow-hidden font-face-gm">
         <Hero windowWidth={windowWidth} />
         <Skills />
         <Projects windowWidth={windowWidth} />

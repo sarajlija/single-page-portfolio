@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./css/custom.css"
 import "./index.css"
 import reportWebVitals from "./reportWebVitals"
+import "./asets/fonts/SpaceGrotesk-VariableFont_wght.ttf"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(

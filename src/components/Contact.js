@@ -19,7 +19,7 @@ function Contact() {
     setValidated(true)
   }
   return (
-    <footer>
+    <footer className="font-face-gm">
       <Container>
         <Row xs={1} md={1} lg={2} className="contact">
           <Col bsPrefix="col">
