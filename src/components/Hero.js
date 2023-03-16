@@ -6,7 +6,6 @@ import Github from "../asets/images/icon-github.svg"
 import FrontEndMentor from "../asets/images/icon-frontend-mentor.svg"
 import Linkedin from "../asets/images/icon-linkedin.svg"
 import Twitter from "../asets/images/icon-twitter.svg"
-//import PaternCircle from "../asets/images/pattern-circle.svg"
 import PaternRing from "../asets/images/pattern-rings.svg"
 import { Container, Nav, Image, Card, Col, Row, Navbar } from "react-bootstrap"
 

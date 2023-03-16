@@ -7,9 +7,6 @@
   font-family: "SpaceGrotesk-VariableFont";
 }
 
-main {
-  background-color: "#000000";
-}
 h1 {
   font-size: 88px;
 }
@@ -35,7 +32,9 @@ a:hover {
   font-size: 32px;
   font-weight: 700;
 }
-
+.hero-line {
+  border-bottom: 5px solid #4ee1a0;
+}
 .nav__hero {
   display: flex;
   justify-content: space-evenly;

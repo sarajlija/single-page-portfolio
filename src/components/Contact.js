@@ -53,7 +53,7 @@ function Contact() {
             </Form>
             <Card.Img src={PaternRing} alt="Card image" bsPrefix="img-pattern-contact" />
           </Col>
-        </Row>{" "}
+        </Row>
         <hr className="border border-light border-1 opacity-75" />
         <Row xs={1} md={1} lg={2}>
           <Col className=" w-100 mb-5">
@@ -61,7 +61,6 @@ function Contact() {
               <Navbar.Brand href="#home" className=" d-flex fw-semibold text-light " bsPrefix="navbar__contact">
                 adamkeyes
               </Navbar.Brand>
-
               <Nav bsPrefix="nav__contact">
                 <Nav.Link href="https://github.com/sarajlija/single-page-portfolio" target="_blank" bsPrefix="nav-link">
                   <Image src={Github} />
