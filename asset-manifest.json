@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/sarajlija/single-page-portfolio.git/static/css/main.e6f1ffc6.css",
+    "main.js": "/sarajlija/single-page-portfolio.git/static/js/main.53132bb1.js",
+    "static/js/787.aea1f7fa.chunk.js": "/sarajlija/single-page-portfolio.git/static/js/787.aea1f7fa.chunk.js",
+    "static/media/SpaceGrotesk-VariableFont_wght.ttf": "/sarajlija/single-page-portfolio.git/static/media/SpaceGrotesk-VariableFont_wght.1036357b9651eff7d3dd.ttf",
+    "static/media/thumbnail-project-4-large.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-4-large.751a4aca20e0604e0904.webp",
+    "static/media/thumbnail-project-6-large.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-6-large.1bb664dcc9883bc285db.webp",
+    "static/media/image-profile-desktop.webp": "/sarajlija/single-page-portfolio.git/static/media/image-profile-desktop.40dab61f7ce1c269d011.webp",
+    "static/media/thumbnail-project-4-small.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-4-small.9b78cb7a8fc016ac6f3e.webp",
+    "static/media/thumbnail-project-1-large.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-1-large.a3cdd4320a0ecdd0855f.webp",
+    "static/media/thumbnail-project-2-large.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-2-large.e06e1b03f76ad1010133.webp",
+    "static/media/thumbnail-project-6-small.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-6-small.6c5f5966e1c2eba5e0af.webp",
+    "static/media/image-profile-tablet.webp": "/sarajlija/single-page-portfolio.git/static/media/image-profile-tablet.314e256446dd62c124eb.webp",
+    "static/media/thumbnail-project-1-small.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-1-small.49e25903f70dda5c2a93.webp",
+    "static/media/image-profile-mobile.webp": "/sarajlija/single-page-portfolio.git/static/media/image-profile-mobile.a8f8432077fd643bed7b.webp",
+    "static/media/thumbnail-project-2-small.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-2-small.f36a7e52b84a6d8c7461.webp",
+    "static/media/thumbnail-project-3-large.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-3-large.204666234bbd998df57f.webp",
+    "static/media/thumbnail-project-5-large.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-5-large.bc869bfce11bf4174bdd.webp",
+    "static/media/thumbnail-project-3-small.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-3-small.951fb216eb344873b374.webp",
+    "static/media/thumbnail-project-5-small.webp": "/sarajlija/single-page-portfolio.git/static/media/thumbnail-project-5-small.e186a34a955415f41ecd.webp",
+    "index.html": "/sarajlija/single-page-portfolio.git/index.html",
+    "static/media/icon-github.svg": "/sarajlija/single-page-portfolio.git/static/media/icon-github.376f746105559084ee856620094454e7.svg",
+    "static/media/icon-twitter.svg": "/sarajlija/single-page-portfolio.git/static/media/icon-twitter.629d1a7a6ef2cb5f9c2fff0113fefc9a.svg",
+    "static/media/icon-linkedin.svg": "/sarajlija/single-page-portfolio.git/static/media/icon-linkedin.299a1d811c6c10d4964a7018ae43228e.svg",
+    "static/media/icon-frontend-mentor.svg": "/sarajlija/single-page-portfolio.git/static/media/icon-frontend-mentor.4b5f99515736c1a6c8b206e4c73dd048.svg",
+    "static/media/pattern-rings.svg": "/sarajlija/single-page-portfolio.git/static/media/pattern-rings.e62a24d55bee668faa1f245882fad1b7.svg",
+    "main.e6f1ffc6.css.map": "/sarajlija/single-page-portfolio.git/static/css/main.e6f1ffc6.css.map",
+    "main.53132bb1.js.map": "/sarajlija/single-page-portfolio.git/static/js/main.53132bb1.js.map",
+    "787.aea1f7fa.chunk.js.map": "/sarajlija/single-page-portfolio.git/static/js/787.aea1f7fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6f1ffc6.css",
+    "static/js/main.53132bb1.js"
+  ]
+}
