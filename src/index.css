@@ -1,11 +1,11 @@
 body {
-  background-color: "#000000";
-
   /*background-image: url("./asets/images/pattern-rings.svg");
   background-repeat: no-repeat;
   background-position: right -20rem top 60rem;*/
 }
-
+main {
+  background-color: "#000000";
+}
 h1 {
   font-size: 88px;
 }
@@ -23,18 +23,28 @@ a {
 a:hover {
   color: #4ee1a0;
 }
-.navbar {
+
+.navbar__hero {
+  position: absolute;
+  top: 0;
   border-bottom: none;
   font-size: 32px;
   font-weight: 700;
 }
+
 .nav__hero {
-  position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  top: 1rem;
+  margin: 0 2rem;
+  width: 80%;
 }
+.navbar__contact {
+  border-bottom: none;
+  font-size: 32px;
+  font-weight: 700;
+}
+
 .nav-link {
   text-decoration: none;
   border-bottom: none;
@@ -49,9 +59,23 @@ a:hover {
   background-color: #242424;
 }
 .card__heading {
+  margin-top: 3rem;
   background-color: #242424;
 }
-
+.navbar__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+  font-size: 32px;
+  font-weight: 700;
+}
+.nav__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1rem;
+}
 .btn-primary {
   background-color: transparent;
   color: #ffffff;
@@ -105,12 +129,29 @@ a:hover {
   justify-content: center;
   width: 100%;
 }
-.img {
-  position: absolute;
-  top: 60rem;
-}
+
 hr {
   margin-top: 6rem;
+}
+footer {
+  background-color: #242424;
+}
+.form-control {
+  border-radius: 0;
+  background-color: #242424;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+}
+.form-label {
+  text-transform: uppercase;
+}
+
+.form-control:focus {
+  background-color: #242424;
+  border: 0;
+}
+.card-text {
+  width: 75%;
 }
 /*mediaquery*/
 @media (max-width: 1024px) {
@@ -134,11 +175,7 @@ hr {
     justify-content: center;
     align-items: center;
   }
-  @media (max-width: 768px) {
-    .nav {
-      top: 0;
-    }
-  }
+
   .col__skills {
     display: flex;
     flex-direction: column;
@@ -147,5 +184,22 @@ hr {
   }
   .pattern-img-right {
     right: -30rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar__hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .card-body__contact {
+    text-align: center;
+  }
+  .card-text {
+    width: 100%;
+    margin: 0;
   }
 }

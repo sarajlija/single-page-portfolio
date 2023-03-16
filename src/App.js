@@ -9,12 +9,14 @@ import Contact from "./components/Contact"
 
 function App() {
   return (
-    <main className="overflow-hidden">
-      <Hero />
-      <Skills />
-      <Projects />
+    <>
+      <main className="overflow-hidden">
+        <Hero />
+        <Skills />
+        <Projects />
+      </main>
       <Contact />
-    </main>
+    </>
   )
 }
 

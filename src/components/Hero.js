@@ -30,15 +30,13 @@ function Hero() {
   return (
     <>
       <Container className="">
-        <Col className="position-absolute "></Col>
+        <Navbar.Brand href="#home" className="d-flex fw-semibold text-light mt-2 ms-0 p-0" bsPrefix="navbar__hero">
+          adamkeyes
+        </Navbar.Brand>
+
         <Row className=" flex-column-reverse flex-md-row">
-          <Col md={6} lg={8} className="px-0">
+          <Col md={6} lg={8} className="px-0 mt-5">
             <Card className="border-0 px-0 bg-black " bsPrefix="card__heading">
-              <Navbar bg="transparent" className="  d-flex flex-column flex-md-row  " bsPrefix="navbar">
-                <Navbar.Brand href="#home" className=" d-flex fw-semibold text-light " bsPrefix="navbar">
-                  adamkeyes
-                </Navbar.Brand>
-              </Navbar>
               <Card.Img src={PaternRing} alt="Card image" bsPrefix="pattern-img " />
               <Card.Body bsPrefix="card-body__hero">
                 <h1 className=" fw-bolder  text-light">
@@ -59,7 +57,7 @@ function Hero() {
             <Card className="bg-dark text-white">
               <Card.Img className="d-flex img-fluid " src={windowWidth > 1024 ? HeroImageDesktop : windowWidth > 576 ? HeroImageTablet : HeroImageMobile} />
               <Card.ImgOverlay bsPrefix="'card-img-overlay__hero">
-                <Nav bsPrefix="nav__hero" className="">
+                <Nav className="position-absolute top-0 mt-3" bsPrefix="nav__hero">
                   <Nav.Link href="https://github.com/sarajlija/single-page-portfolio" target="_blank" bsPrefix="nav-link">
                     <Image src={Github} />
                   </Nav.Link>
