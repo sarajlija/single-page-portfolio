@@ -1,7 +1,6 @@
 {
   "name": "single-page-portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/sarajlija/single-page-portfolio.git",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
